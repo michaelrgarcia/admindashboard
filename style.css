@@ -7,7 +7,7 @@
     background-color: aliceblue;
     display: grid;
     grid-template-columns: clamp(130px, 20%, 175px) 2fr;
-    grid-template-rows: 73px;
+    grid-template-rows: 70px;
     height: 100vh;
     width: 100vw;
 }
@@ -24,13 +24,16 @@
     display: grid;
     grid-template-columns: 30px 10px;
     align-items: center;
-    color: white;
 
     margin: 8px 0 0 5px;
+
+    color: #FFF;
 }
 
 .logo img {
     width: 25px;
+    
+    filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(104%) contrast(107%);
 }
 
 header {
