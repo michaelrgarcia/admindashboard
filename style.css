@@ -15,27 +15,49 @@
 
 .dashboard {
     background-color: #10b981;
-    grid-row: 1 / 7;
+    color: #FFF;
 
+    font-weight: bold;
+   
+    grid-row: 1 / 7;
     display: grid;
-    grid-template-rows: repeat(10, 20px);
+    grid-template-rows: 20px repeat(9, 10px);
+    row-gap: 15px;
+}
+
+.dashboard span {
+    display: grid;
+    align-items: center;
 }
 
 .logo {
-    display: grid;
     grid-template-columns: 30px 10px;
-    align-items: center;
 
     margin: 8px 0 0 5px;
+}
 
-    color: #FFF;
+.logo ~ span {
+    font-size: .75em;
+}
+
+.home {
+    grid-template-columns: 20px 10px;
+    
+    margin: 20px 0 0 13px;
 }
 
 .logo img {
     width: 25px;
-    
+}
+
+.home img {
+    width: 12px;
+}
+
+.icon > img {
     filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(104%) contrast(107%);
 }
+
 
 header {
     grid-row: 1 / 2;
