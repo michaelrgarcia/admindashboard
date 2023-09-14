@@ -32,7 +32,7 @@
 }
 
 .logo {
-    grid-template-columns: 30px 10px;
+    grid-template-columns: 30px min-content;
 
     margin: 8px 0 0 5px;
 }
@@ -52,7 +52,7 @@
 .other-buttons span {
     font-size: .7em;
 
-    grid-template-columns: 20px 10px;
+    grid-template-columns: 20px min-content;
 
     margin-left: 13px;
 }
