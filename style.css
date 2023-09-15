@@ -7,8 +7,8 @@
 .content {
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: clamp(130px, 20%, 175px) 2fr;
-    grid-template-rows: 70px;
+    grid-template-columns: clamp(150px, 30%, 300px) 2fr;
+    grid-template-rows: 170px;
     height: 100vh;
     width: 100vw;
 }
@@ -32,13 +32,14 @@
 }
 
 .logo {
-    grid-template-columns: 30px min-content;
-
+    grid-template-columns: 65px min-content;
     margin: 8px 0 0 5px;
+
+    font-size: 2em;
 }
 
 .logo > img {
-    width: 25px;
+    width: 60px;
 }
 
 .buttons {
@@ -50,16 +51,16 @@
 
 .buttons span,
 .other-buttons span {
-    font-size: .7em;
+    font-size: 1.1em;
 
-    grid-template-columns: 20px min-content;
+    grid-template-columns: 35px min-content;
 
     margin-left: 13px;
 }
 
 .buttons span img,
 .other-buttons span img {
-    width: 12px;
+    width: 25px;
 }
 
 .other-buttons {
