@@ -79,6 +79,111 @@ header {
     grid-row: 1 / 2;
 }
 
+header > div {
+    height: 50%;
+    padding-left: 35px;
+}
+
+.region1,
+.region2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.region1 {
+    align-items: baseline;
+    column-gap: 700px;
+
+    margin-top: 20px;
+}
+
+.search-area {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 15px;
+
+    margin-top: -10px;
+}
+
+.search-area > img {
+    width: 25px;
+}
+
+.search-area > input {
+    border: none;
+    border-radius: 20px;
+
+    background-color: #e0e0e0ad;
+    width: 550px;
+}
+
+.account-area {
+    display: grid;
+    grid-template-columns: repeat(2, min-content) 110px;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.account-area > img[alt="Avatar"] {
+    width: 40px;
+}
+
+.account-area > img[alt="Alerts"] {
+    width: 30px;
+}
+
+.region2 {
+    margin-top: -20px;
+    column-gap: 500px;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 70px 500px;
+    grid-template-rows: repeat(2, min-content);
+    align-items: center;
+    column-gap: 20px;
+}
+
+.greeting > img {
+    width: 70px;
+    
+    grid-row: span 2;
+}
+
+.greeting > img ~ p {
+    font-weight: bold;
+}
+
+.greeting > img + p {
+    font-size: .8em;
+}
+
+.greeting > img + p + p {
+    font-size: 1.5em;
+    
+    margin-top: -10px;
+}
+
+.userbuttons {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 50px;
+
+    margin-bottom: 10px;
+}
+
+.userbuttons span {
+    background-color: #059669;
+    color: #FFF;
+
+    padding: 10px 38px;
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
 main {
     background-color: #d2e2db;
     grid-column: 2 / 4;
