@@ -327,4 +327,5 @@ main {
 
 .user > img + p + p {
     margin-top: 3px;
+    font-weight: 300;
 }
