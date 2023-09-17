@@ -5,7 +5,6 @@
 }
 
 .content {
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: clamp(150px, 30%, 290px) 2fr;
     grid-template-rows: 170px;
@@ -58,8 +57,8 @@
     margin-left: 28px;
 }
 
-.buttons span img,
-.other-buttons span img {
+.buttons span > img,
+.other-buttons span > img {
     width: 25px;
 }
 
@@ -232,14 +231,14 @@ main {
     padding: 30px 0 45px 20px;
 }
 
-.card p:first-child {
+.card p:nth-child(1) {
     font-weight: bold;
     font-size: 1.2em;
 
     margin-bottom: 3px;
 }
 
-.card > p + p {
+.card > p:nth-child(2) {
     grid-row-start: 2;
     grid-column-start: span 2;
 
@@ -260,4 +259,52 @@ main {
 
 .card-icons img {
     width: 30px;
+}
+
+.announcement-grid {
+    background-color: white;
+
+    padding: 10px 45px 20px 35px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+}
+
+.announcement {
+    padding: 30px 0 20px 8px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.announcement p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.1em;
+
+    margin-bottom: 5px;
+}
+
+.announcement p:nth-child(2) {
+    width: 300px;
+}
+
+.announcement-grid > .announcement:nth-child(3) {
+    border-bottom: none;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: min-content 200px;
+    grid-template-rows: repeat(2, min-content);
+    align-items: center;
+    column-gap: 20px;
+}
+
+.user > img {
+    width: 40px;
+    
+    grid-row: span 2;
+}
+
+.user > img + p + p {
+    margin-top: 3px;
 }
