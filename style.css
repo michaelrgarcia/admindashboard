@@ -110,6 +110,8 @@ header > div {
 .search-area > input {
     border: none;
     border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     background-color: #e0e0e0ad;
     width: 550px;
