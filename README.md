@@ -4,4 +4,4 @@ This is a simple project trying to recreate a common layout, almost exclusively 
 
 After this project, I will start to focus on JavaScript and other technologies more again.
 
-You can find it here: https://leavesturninsideyou.github.io/admindashboard/
+You can find it here: https://michaelrgarcia.github.io/admindashboard/
